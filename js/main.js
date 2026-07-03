@@ -64,6 +64,12 @@ function generateHeader(){
 
 <div class="container nav-container">
 
+<button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
 <a href="index.html" class="logo">
 
 <img src="images/logo.png"
@@ -184,7 +190,132 @@ ${accountHTML}
 
 </header>
 
+<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+<nav class="mobile-nav" id="mobileNav">
+
+<div class="mobile-nav-header">
+
+<a href="index.html" class="logo">
+<img src="images/logo.png" alt="Lunelle Logo">
+</a>
+
+<button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+</div>
+
+<ul class="mobile-nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="new-arrival.html">New Arrival</a></li>
+
+<li class="mobile-nav-group">
+
+<details>
+
+<summary>Basic Hijab <i class="fa-solid fa-chevron-down"></i></summary>
+
+<ul>
+<li><a href="basic-shawl.html">Basic Shawl</a></li>
+<li><a href="basic-square.html">Basic Square</a></li>
+<li><a href="instant.html">Instant Hijab</a></li>
+</ul>
+
+</details>
+
+</li>
+
+<li class="mobile-nav-group">
+
+<details>
+
+<summary>Printed Hijab <i class="fa-solid fa-chevron-down"></i></summary>
+
+<ul>
+<li><a href="printed-shawl.html">Printed Shawl</a></li>
+<li><a href="printed-square.html">Printed Square</a></li>
+</ul>
+
+</details>
+
+</li>
+
+<li class="mobile-nav-group">
+
+<details>
+
+<summary>Accessories <i class="fa-solid fa-chevron-down"></i></summary>
+
+<ul>
+<li><a href="brooch.html">Brooch</a></li>
+<li><a href="pins.html">Hijab Pins</a></li>
+</ul>
+
+</details>
+
+</li>
+
+<li><a href="sale.html">Sale</a></li>
+
+</ul>
+
+</nav>
+
 `;
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileNav = document.getElementById("mobileNav");
+    const mobileNavOverlay = document.getElementById("mobileNavOverlay");
+    const mobileNavClose = document.getElementById("mobileNavClose");
+
+    function openMobileNav(){
+
+        mobileNav.classList.add("active");
+        mobileNavOverlay.classList.add("active");
+        document.body.classList.add("no-scroll");
+
+    }
+
+    function closeMobileNav(){
+
+        mobileNav.classList.remove("active");
+        mobileNavOverlay.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+
+    }
+
+    if(menuToggle){
+
+        menuToggle.addEventListener("click", openMobileNav);
+
+    }
+
+    if(mobileNavClose){
+
+        mobileNavClose.addEventListener("click", closeMobileNav);
+
+    }
+
+    if(mobileNavOverlay){
+
+        mobileNavOverlay.addEventListener("click", closeMobileNav);
+
+    }
+
+    if(mobileNav){
+
+        mobileNav.querySelectorAll("a").forEach(link=>{
+
+            link.addEventListener("click", closeMobileNav);
+
+        });
+
+    }
 
     const accountBtn = document.getElementById("accountMenuBtn");
     const accountDropdown = document.getElementById("accountDropdown");
