@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sale & Promotions | Lunelle Hijab</title>
+
+    <meta name="description"
+          content="Explore Lunelle Hijab's current promotions, promo codes and clearance sale items.">
+
+    <link rel="icon"
+          href="images/logo.png">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body data-page="sale">
+
+<!--=========================================
+            LOADING SCREEN
+==========================================-->
+
+<div id="loading-screen">
+
+    <div class="loading-container">
+
+        <img src="images/logo.png"
+             alt="Lunelle Hijab Logo"
+             class="loading-logo">
+
+        <h1 class="loading-title">Lunelle Hijab</h1>
+
+        <p class="loading-tagline">Grace In Every Fold</p>
+
+        <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    setTimeout(function () {
+        const screen = document.getElementById("loading-screen");
+
+        if (screen) {
+            screen.classList.add("loading-hidden");
+        }
+    }, 4000);
+</script>
+
+<!--=========================================
+                HEADER
+==========================================-->
+
+<header id="header"></header>
+
+<main id="page-content">
+
+    <!--=========================================
+                BREADCRUMB
+    ==========================================-->
+
+    <section class="breadcrumb-section">
+
+        <div class="container">
+
+            <a href="index.html">Home</a>
+
+            <span>/</span>
+
+            <span>Sale</span>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+                PAGE HEADER
+    ==========================================-->
+
+    <section class="category-header section">
+
+        <div class="container">
+
+            <div class="category-card">
+
+                <h1>Sale & Promotions</h1>
+
+                <p>
+                    Enjoy more for less with Lunelle Hijab. Stack our current
+                    promo codes at checkout and shop discounted pieces in
+                    our clearance sale below.
+                </p>
+
+                <div class="collection-info">
+
+                    <span>3 Active Promotions</span>
+
+                    <span class="divider">|</span>
+
+                    <span>Clearance Items Up To 20% Off</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+            PROMO CODES
+    ==========================================-->
+
+    <section class="collection section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+
+                    <span class="section-small">
+
+                        CURRENT PROMOTIONS
+
+                    </span>
+
+                    <h2 class="section-title">
+
+                        Save More With These Codes
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <p class="section-description">
+
+                Copy a code below and paste it into the promo box in your
+                cart before checkout. Only one code can be applied per order.
+
+            </p>
+
+            <div class="collection-grid">
+
+                <!-- Buy 2 Hijabs -->
+
+                <div class="collection-card">
+
+                    <div class="collection-icon">
+
+                        <i class="fa-solid fa-tags"></i>
+
+                    </div>
+
+                    <h3>Buy 2 Hijabs, Get 10% Off</h3>
+
+                    <p>
+                        Mix and match any Basic Hijab, Printed Hijab or
+                        Instant Hijab collection. Applies automatically once
+                        your cart has 2 or more hijabs.
+                    </p>
+
+                    <div class="promo-code-box show">
+
+                        <span>Code:</span>
+
+                        <strong>BUY2SAVE10</strong>
+
+                        <button type="button" class="copy-code-btn" data-code="BUY2SAVE10">
+
+                            Copy
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Free Shipping -->
+
+                <div class="collection-card">
+
+                    <div class="collection-icon">
+
+                        <i class="fa-solid fa-truck-fast"></i>
+
+                    </div>
+
+                    <h3>Free Shipping RM150+</h3>
+
+                    <p>
+                        Spend RM 150 or more in a single order and shipping
+                        is on us. No code needed, it applies automatically
+                        in your cart.
+                    </p>
+
+                    <div class="promo-code-box show">
+
+                        <span>Applies:</span>
+
+                        <strong>Automatically</strong>
+
+                    </div>
+
+                </div>
+
+                <!-- New Member -->
+
+                <div class="collection-card">
+
+                    <div class="collection-icon">
+
+                        <i class="fa-solid fa-gift"></i>
+
+                    </div>
+
+                    <h3>New Member, Get 10% Off</h3>
+
+                    <p>
+                        First time shopping with Lunelle Hijab? Login or
+                        create a free account and 10% off is applied to
+                        every order automatically, no code required.
+                    </p>
+
+                    <div class="promo-code-box show member-promo-box"
+                         id="memberPromoBox">
+
+                        <!-- Filled by main.js based on login status -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+            CLEARANCE SALE
+    ==========================================-->
+
+    <section class="collection section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+
+                    <span class="section-small">
+
+                        LIMITED STOCK
+
+                    </span>
+
+                    <h2 class="section-title">
+
+                        Clearance Sale
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <p class="section-description">
+
+                Discounted favourites from across our collections while
+                stocks last.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="product-toolbar">
+
+        <div class="container toolbar-container">
+
+            <div class="product-count">
+
+                Showing
+
+                <strong id="visibleProductCount">4</strong>
+
+                of 6 Products
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="product-section section">
+
+        <div class="container">
+
+            <div class="product-grid"
+                 id="saleProducts">
+
+                <!-- Products generated by main.js -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="pagination-section">
+
+        <div class="container">
+
+            <div class="pagination"
+                 id="collectionPagination">
+
+                <button type="button"
+                        id="prevCollectionPage"
+                        aria-label="Previous page">
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </button>
+
+                <!-- Page numbers generated by main.js -->
+
+                <button type="button"
+                        id="nextCollectionPage"
+                        aria-label="Next page">
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!--=========================================
+                FOOTER
+==========================================-->
+
+<footer id="footer"></footer>
+
+<div id="luna-ai"></div>
+
+<!--=========================================
+                JAVASCRIPT
+==========================================-->
+
+<script src="js/product.js"></script>
+
+<script src="js/main.js"></script>
+
+<script>
+    document.addEventListener("click", (e) => {
+
+        const btn = e.target.closest(".copy-code-btn");
+
+        if(!btn) return;
+
+        const code = btn.dataset.code;
+
+        if(navigator.clipboard){
+
+            navigator.clipboard.writeText(code);
+
+        }
+
+        const original = btn.textContent;
+
+        btn.textContent = "Copied!";
+
+        setTimeout(() => { btn.textContent = original; }, 1500);
+
+    });
+</script>
+
+</body>
+
+</html>

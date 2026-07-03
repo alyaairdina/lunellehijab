@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--==================================================
+                        WEBSITE INFORMATION
+    ===================================================-->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lunelle Hijab | Grace In Every Fold</title>
+
+    <meta name="description"
+          content="Lunelle Hijab is a modern Malaysian hijab brand offering elegant, comfortable and affordable hijabs for working Muslim women.">
+
+    <meta name="keywords"
+          content="Lunelle Hijab, Hijab Malaysia, Shawl, Bawal, Instant Hijab, Muslimah Fashion">
+
+    <meta name="author"
+          content="IML254 Group Project">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <meta name="theme-color"
+          content="#C8A2A8">
+
+    <!--==================================================
+                            FAVICON
+    ===================================================-->
+
+    <link rel="icon"
+          href="images/logo.png">
+
+    <!--==================================================
+                        GOOGLE FONTS
+    ===================================================-->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!--==================================================
+                        FONT AWESOME
+    ===================================================-->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!--==================================================
+                            CSS
+    ===================================================-->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body data-page="home">
+
+<!--=========================================
+            LOADING SCREEN
+==========================================-->
+
+<div id="loading-screen">
+
+    <div class="loading-container">
+
+        <img src="images/logo.png"
+             alt="Lunelle Hijab Logo"
+             class="loading-logo">
+
+        <h1 class="loading-title">
+            Lunelle Hijab
+        </h1>
+
+        <p class="loading-tagline">
+            Grace In Every Fold
+        </p>
+
+        <div class="loading-dots">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!--=========================================
+                    HEADER
+    ==========================================-->
+
+    <header id="header"></header>
+
+    <!--=========================================
+                SEARCH POPUP
+    ==========================================-->
+
+    <div id="search-popup"></div>
+
+    <!--=========================================
+                MAIN CONTENT
+    ==========================================-->
+
+    <main id="page-content">
+
+<!--=========================================
+            BREADCRUMB
+==========================================-->
+
+<section class="breadcrumb-section">
+
+    <div class="container">
+
+        <a href="index.html">
+
+            Home
+
+        </a>
+
+        <span>/</span>
+
+        <span>
+
+            New Arrival
+
+        </span>
+
+    </div>
+
+</section>
+
+<!--=========================================
+            PAGE HEADER
+==========================================-->
+
+<section class="category-header section">
+
+    <div class="container">
+
+        <div class="category-card">
+
+            <h1>
+
+                New Arrival
+
+            </h1>
+
+            <p>
+
+                Discover Lunelle Hijab's latest collections, crafted with premium fabrics,
+                elegant styles and timeless colours for every occasion.
+
+            </p>
+
+            <div class="collection-info">
+
+                <span>
+
+                    Latest Collection
+
+                </span>
+
+                <span class="divider">
+
+                    |
+
+                </span>
+
+                <span>
+
+                    8 Products Available
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+            PRODUCT TOOLBAR
+==========================================-->
+
+<section class="product-toolbar">
+
+    <div class="container toolbar-container">
+
+        <div class="sort-option">
+
+            <label>
+
+                Sort By
+
+            </label>
+
+            <select id="sortProducts">
+
+                <option value="Low-High">
+
+                    Price: Low to High
+
+                </option>
+
+                <option value="High-Low">
+
+                    Price: High to Low
+
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+            PRODUCT GRID
+==========================================-->
+
+<section class="product-section section">
+
+    <div class="container">
+
+        <div class="product-grid"
+             id="newArrivalProducts">
+
+            <!-- Generated by main.js -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+            PAGINATION
+==========================================-->
+
+<section class="pagination-section">
+
+    <div class="container">
+
+        <div class="pagination" id="paginationControls">
+
+            <button id="prevPage">
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+            <!-- Page number buttons generated by main.js -->
+
+            <button id="nextPage">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+            WHY YOU'LL LOVE IT
+==========================================-->
+
+<section class="features section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Why You'll Love It
+
+        </h2>
+
+        <div class="feature-grid">
+
+    <div class="feature-card">
+        <i class="fa-solid fa-briefcase"></i>
+        <h3>Workday Ready</h3>
+        <p>
+            Polished designs that transition effortlessly from meetings
+            to after-work plans.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <i class="fa-solid fa-feather"></i>
+        <h3>All-Day Comfort</h3>
+        <p>
+            Lightweight materials designed for long working days
+            without feeling heavy.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <i class="fa-solid fa-wind"></i>
+        <h3>Cool and Breathable</h3>
+        <p>
+            Breathable fabrics that keep you comfortable during
+            commutes and busy schedules.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Quick to Style</h3>
+        <p>
+            Practical styles that create a confident, professional
+            look in less time.
+        </p>
+    </div>
+
+</div>
+
+</section>
+
+<!--=========================================
+            MATERIAL GUIDE
+==========================================-->
+
+<section class="material-guide section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Material Guide
+
+        </h2>
+
+        <div class="material-grid">
+
+    <div class="material-card">
+
+        <h3>Premium Chiffon</h3>
+
+        <p>
+            Lightweight, flowy and elegant with beautiful drape.
+        </p>
+
+    </div>
+
+    <div class="material-card">
+
+        <h3>Korean Moss Crepe</h3>
+
+        <p>
+            Soft texture, ironless and easy to maintain.
+        </p>
+
+    </div>
+
+    <div class="material-card">
+
+        <h3>Premium Cotton</h3>
+
+        <p>
+            Breathable, comfortable and suitable for daily wear.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+<!--=========================================
+            CARE GUIDE
+==========================================-->
+
+<section class="care-guide section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Care Guide
+
+        </h2>
+
+        <div class="care-grid">
+
+    <div class="material-card">
+
+        <h3><i class="fa-solid fa-water"></i> Washing</h3>
+
+        <p>
+            Hand wash in cold water with a mild detergent, or use the delicate
+            cycle. Avoid bleach to keep colours vibrant.
+        </p>
+
+    </div>
+
+    <div class="material-card">
+
+        <h3><i class="fa-solid fa-wind"></i> Drying</h3>
+
+        <p>
+            Air dry in shade away from direct sunlight to prevent fading and
+            preserve fabric elasticity.
+        </p>
+
+    </div>
+
+    <div class="material-card">
+
+        <h3><i class="fa-solid fa-shirt"></i> Ironing</h3>
+
+        <p>
+            Use a low heat setting when ironing to maintain the 
+			fabric's quality and smooth appearance.
+        </p>
+
+    </div>
+
+    <div class="material-card">
+
+        <h3><i class="fa-solid fa-box"></i> Storage</h3>
+
+        <p>
+            Fold neatly or hang to avoid deep creases. Store in a cool, dry
+            place away from direct heat.
+        </p>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+</main>
+
+    <!--=========================================
+                    FOOTER
+    ==========================================-->
+
+    <footer id="footer"></footer>
+
+    <!--=========================================
+                    LUNA AI
+    ==========================================-->
+
+    <div id="luna-ai"></div>
+
+    <!--==================================================
+                        JAVASCRIPT
+    ===================================================-->
+
+    <script src="js/product.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

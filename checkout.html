@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Lunelle Hijab</title>
+
+    <meta name="description"
+          content="Complete your Lunelle Hijab order through the checkout form.">
+
+    <meta name="keywords"
+          content="Lunelle Hijab, Checkout, Order Form">
+
+    <meta name="author"
+          content="IML254 Group Project">
+
+    <link rel="icon"
+          href="images/logo.png">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header id="header"></header>
+
+<main id="page-content">
+
+    <section class="breadcrumb-section">
+
+        <div class="container">
+
+            <a href="index.html">Home</a>
+
+            <span>/</span>
+
+            <a href="cart.html">Shopping Cart</a>
+
+            <span>/</span>
+
+            <span>Checkout</span>
+
+        </div>
+
+    </section>
+
+    <section class="category-header section">
+
+        <div class="container">
+
+            <div class="category-card">
+
+                <h1>Checkout</h1>
+
+                <p>
+                    Complete your order details below. This form is for educational project purposes only.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="checkout-section section">
+
+        <div class="container">
+
+            <form class="checkout-form" id="checkoutForm">
+
+                <h2>Customer Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>Full Name</label>
+
+                        <input type="text"
+                               id="customerName"
+                               placeholder="Enter your full name">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Email Address</label>
+
+                        <input type="email"
+                               id="customerEmail"
+                               placeholder="Enter your email">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Phone Number</label>
+
+                        <input type="tel"
+                               id="customerPhone"
+                               placeholder="Enter your phone number">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>State</label>
+
+                        <select id="customerState">
+
+                            <option value="">Select state</option>
+
+                            <option>Johor</option>
+                            <option>Kedah</option>
+                            <option>Kelantan</option>
+                            <option>Melaka</option>
+                            <option>Negeri Sembilan</option>
+                            <option>Pahang</option>
+                            <option>Perak</option>
+                            <option>Perlis</option>
+                            <option>Penang</option>
+                            <option>Sabah</option>
+                            <option>Sarawak</option>
+                            <option>Selangor</option>
+                            <option>Terengganu</option>
+                            <option>Kuala Lumpur</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Delivery Address</label>
+
+                    <textarea id="customerAddress"
+                              placeholder="Enter your full delivery address"></textarea>
+
+                </div>
+
+                <h2>Payment Method</h2>
+
+                <div class="payment-options">
+
+                    <label>
+                        <input type="radio"
+                               name="payment"
+                               value="Online Banking">
+                        Online Banking
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="payment"
+                               value="Cash On Delivery">
+                        Cash On Delivery
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="payment"
+                               value="E-Wallet">
+                        E-Wallet
+                    </label>
+
+                </div>
+
+                <button type="submit"
+                        class="btn">
+
+                    Place Order
+
+                </button>
+
+                <p class="form-message"
+                   id="checkoutMessage"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer id="footer"></footer>
+
+<div id="luna-ai"></div>
+
+<script src="js/product.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
